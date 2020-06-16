@@ -72,6 +72,7 @@ func getMsdsByCas(cas string) string {
 	return json
 }
 
+// 获取网页的dom树
 func getDOM(url string) *goquery.Document {
 	resp, err := http.Get(url)
 	handleErr(err, "http get error url:"+url)
